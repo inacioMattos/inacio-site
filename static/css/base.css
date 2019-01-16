@@ -1,0 +1,83 @@
+body{
+	margin: 0px;
+}
+
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+.main{
+	display: flex;
+	flex-direction: row;
+	background-color: red;
+}
+
+.menu{
+	background-color: aqua;
+	height: 100vh;
+	padding: 0px 25px 0px 25px;
+	margin-right: 20px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: sticky;
+	top: 0;
+}
+
+.btn-menu{
+	margin-right: 20px;
+	font-size: 60px;
+	background-color: blue;
+	transition: all 1s;
+	display: none;
+}
+
+.conteudo{
+	background-color: purple;
+	transition: all 1s;
+	height: 500vh;
+}
+
+
+@media only screen and (max-width: 700px)
+{
+	
+
+	.menu{
+		position: fixed;
+		left: -350px;
+		transition: all 0.6s;
+	}
+
+	.btn-menu{
+		display: inherit;
+		position: fixed;
+		left: 0px;
+		transition: all 0.6s;
+	}
+
+	.ativo{
+		left: 0px;
+	}
+
+	.ativo-btn{
+		left: 300px;
+	}
+	
+
+	@media only screen and (max-width: 355px)
+	{
+		.btn-menu{
+			top: 0px;
+		}
+
+		.ativo-btn{
+			left: 0px;
+			top: 80vh;
+		}
+	}
+	
+}
