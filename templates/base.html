@@ -8,7 +8,11 @@
 	<title>inácio</title>
 	<link href="{% static 'css/base.css' %}" rel="stylesheet">
 	<link href="{% static 'css/hamburgers.css' %}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 	<script src="{% static 'javascript/base.js' %}"></script> 
+	{% block head %}
+	{% endblock %}
 </head>
 <body>
 	
@@ -16,22 +20,20 @@
 	<div class="main">
 		<aside id="" role="complementary" class="menu">
 			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="{% url 'url_home' %}">Inácio Mattos</a></h1>
-				<span class="position"><a href="#">Programador</a> em Camaquã e região</span>
+				<div class="img-menu" style="background-image: url({% static 'images/eu-menu.jpg' %});"></div>
+				<h1 id="header"><a href="{% url 'url_home' %}" style="font-size: 22px;">Inácio Mattos</a></h1>
+				<span class="sub-header"><a href="#" style="color:#2c98f0;">Programador</a> em Camaquã e região</span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">Sobre</a></li>
-						<li><a href="#" data-nav-section="services">Especialidades</a></li>
-						<li><a href="#" data-nav-section="skills">Habilidades</a></li>
-						<li><a href="#" data-nav-section="education">Educação</a></li>
-						<li><a href="#" data-nav-section="experience">Experiencia</a></li>
-						<li><a href="#" data-nav-section="work">Projetos</a></li>
-						<li><a href="#" data-nav-section="blog">Blog</a></li>
-						<li><a href="#" data-nav-section="contact">Contato</a></li>
+					<ul class="items">
+						<a href="#" data-nav-section="home"><li class="item-menu">Home</li></a>
+						<a href="#" data-nav-section="projetos"><li class="item-menu">projetos</li></a>
+						<a href="#" data-nav-section="blog"><li class="item-menu">blog</li></a>
+						<a href="#" data-nav-section="conquistas"><li class="item-menu">conquistas</li></a>
+						<a href="#" data-nav-section="educação"><li class="item-menu">Educação</li></a>
+						<a href="#" data-nav-section="habilidades"><li class="item-menu">habilidades</li></a>
+						<a href="#" data-nav-section="contato"><li class="item-menu">contato</li></a>
 					</ul>
 				</div>
 			</nav>

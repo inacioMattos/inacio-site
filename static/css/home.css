@@ -1,0 +1,143 @@
+.main-home{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gradient{
+	width: 100%;
+	height: 800px;
+	background-image: -webkit-linear-gradient(0deg,#766dff 0%,#88f3ff 100%);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+div.card{
+	margin: 300px 100px 100px 100px;
+	background-color: white;
+	display: flex;
+	padding: 40px;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 40px;
+	max-width: 1000px;
+	flex-wrap: nowrap;
+	box-shadow:2px 20px 60px #212121;
+}
+
+.card div.foto-card{
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+	position: relative;
+	width: 400px;
+	height: 600px;
+	border-radius: 10%;
+	min-width: 400px;
+}
+
+.menu{
+	z-index: 10;
+}
+
+div.card div.texto{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+div.card div.texto span.header{
+	font-size: 40px;
+	font-weight: 500;
+}
+
+div.card div.texto h3{
+	font-weight: 400;
+}
+
+
+@media only screen and (max-width: 1700px)
+{
+	div.card div.foto-card{
+		min-width: 300px;
+		height: 500px;
+	}
+
+	div.card{
+		
+		margin: 300px 20px 100px 20px;
+	}
+
+	div.card div.texto span.header{
+		font-size: 30px;
+	}
+
+	@media only screen and (max-width: 1200px)
+	{
+		span.cortar{
+			display: none;
+		}
+
+		@media only screen and (max-width: 1100px)
+		{
+			div.card
+			{
+				flex-direction: column;
+				align-items: center;
+				margin-top: 100px;
+			}
+
+			div.card div.foto-card{
+				height: 40vw;
+				min-height: 250px;
+				width: 40vw;
+				min-width: 250px;
+				margin-bottom: 40px;
+			}
+
+			div.card div.texto{
+				margin-left: 0px;
+			}
+		
+			@media only screen and (max-width: 800px)
+			{
+				div.card div.foto-card{
+					width: 400px;
+					height: 400px;
+				}
+			}
+			@media only screen and (max-width: 500px)
+			{
+				body{
+					overflow-y: scroll;
+					overflow-x: hidden;
+				}
+				.gradient{
+					height: 100px;
+				}
+
+				div.card{
+					margin-top: 100px;
+					padding-top: 30px;
+					width: 100%;
+					box-shadow: 1px 1px 40px #00000041
+				}
+
+				div.card div.foto-card{
+					width: 90vw;
+					height: 90vw;
+					border-radius: 3%;
+				}
+
+				div.card div.texto{
+					margin: 10px;
+				}
+			}
+
+		
+		}
+	}
+}

@@ -1,5 +1,31 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
 
 {% block conteudo %}
-<span>oiiiii</span>
+<div class="main-home">
+	<div class="gradient"></div>
+	<div class="card">
+		<div class="foto-card" style="background-image: url({% static 'images/eu-card.jpg' %});"></div>
+		<div class="texto">
+			<span class="header">E aí!<br>Eu sou o Inácio</span>
+			<h3>Sou um estudante do curso técnico de informática e tenho 18 anos. Amo aprender coisas novas e justamente por isso estou sempre correndo atrás de novos conhecimentos, seja em cursos, workshops, livros ou até em competições.
+					Meu hobbie favorito é resolver problemas lógicos, na maioria das vezes com programação. <span class="cortar">Minhas duas áreas favoritas dentro da TI são Hacking Ético e Inteligencia Artificial.</span>
+					<br><br><span class="cortar"> PS: Minha linguagem favorita é Python!</span>
+			</h3>
+			<h3>
+				📅     17 de abril de 2000<br>
+				📞     (51) 98434-1704<br>
+				✉     inaciotm@hotmail.com<br>
+				🏠     Camaquã, Rio Grande do Sul
+			</h3>
+		</div>
+	</div>
+</div>
 {% endblock %}
