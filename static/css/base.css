@@ -9,6 +9,34 @@ a {
 	color: unset;
 }
 
+i {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+
+  
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  }
+
 .main{
 	display: flex;
 	flex-direction: row;
@@ -20,7 +48,6 @@ a {
 	font-family: 'Playfair Display', serif;
 	height: 100vh;
 	padding: 0px 25px 0px 25px;
-	margin-right: 20px;
 	width: 250px;
 	display: flex;
 	align-items: center;
@@ -96,12 +123,8 @@ ul .ativo{
 	width: 100%;
 }
 
-
 @media only screen and (max-width: 800px)
 {
-	.main{
-		height: 100vh;
-	}	
 
 	.menu{
 		position: fixed;

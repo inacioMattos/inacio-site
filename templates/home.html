@@ -9,6 +9,7 @@
 
 {% block conteudo %}
 <div class="main-home">
+	<a name="home"></a>
 	<div class="gradient"></div>
 	<div class="card">
 		<div class="foto-card" style="background-image: url({% static 'images/eu-card.jpg' %});"></div>
@@ -28,7 +29,7 @@
 	</div>
 
 	<div class="header-projetos">
-		<h1>Meus projetos!</h1>
+		<a name="projetos"><h1>Meus projetos!</h1></a>
 		<div></div>
 	</div>
 	<div class="projetos">
@@ -36,38 +37,159 @@
 			<div class="info-projeto info-projeto1">
 				<h2 class="titulo-projeto titulo-projeto1">Identador</h2>
 				<span class="desc-projeto desc-projeto1">Um programa que identa seu código automaticamente. Foi desenvolvido em Pascal e para mais informações, basta clicar.</span>
+				<div class="git"><br><br><br><br><br><br><br><br><br><br><img src="{% static 'images/github64.png' %}" alt=""></div>
 			</div>
 		</div></a>
 		<a href="https://github.com/inacioMattos/line--following-robot_OBR2017" target="_blank"><div class="projeto projeto2" onmouseover="proj_enter2()" onmouseout="proj_out2()" style="background-image: url({% static 'images/arduino.JPG' %});">
 			<div class="info-projeto info-projeto2">
-				<h2 class="titulo-projeto titulo-projeto2">Titulo ulau auha eua aiugauha asudhaushdua</h2>
-				<span class="desc-projeto desc-projeto2">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+				<h2 class="titulo-projeto titulo-projeto2">Robô para Olimpiada Brasileira de Robotica</h2>
+				<span class="desc-projeto desc-projeto2">Vencedor da melhor programação da Olimpiada Brasileira de Robotica, o robô é 100% autonomo e foi construído utilizando Arduino e peças impressas numa impressora 3D. Desenvolvido em C++.</span>
+				<div class="git"><br><br><br><br><br><br><br><img src="{% static 'images/github64.png' %}" alt=""></div>
 			</div>
 		</div></a>
 		<a href="https://github.com/inacioMattos/Jogo-da-Velha-Imbat-vel" target="_blank"><div class="projeto projeto3" onmouseover="proj_enter3()" onmouseout="proj_out3()" style="background-image: url({% static 'images/jogoVelha.gif' %});">
 			<div class="info-projeto info-projeto3">
-				<h2 class="titulo-projeto titulo-projeto3">Titulo ulau auha eua aiugauha asudhaushdua</h2>
-				<span class="desc-projeto desc-projeto3">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+				<h2 class="titulo-projeto titulo-projeto3">Jogo da Velha invencícel</h2>
+				<span class="desc-projeto desc-projeto3">Um jogo da velha que nunca perde. Feito em pascal e utilizando AI (Artificial Intelligence) para ser invencível. <br>PS: Duvido você ganhar dele!</span>
+				<div class="git"><br><br><br><br><br><br><br><br><br><br><img src="{% static 'images/github64.png' %}" alt=""></div>
 			</div>
 		</div></a>
 		<a href="https://github.com/inacioMattos/Historiando" target="_blank"><div class="projeto projeto4" onmouseover="proj_enter4()" onmouseout="proj_out4()" style="background-image: url({% static 'images/historiando.png' %});">
 			<div class="info-projeto info-projeto4">
-				<h2 class="titulo-projeto titulo-projeto4">Titulo ulau auha eua aiugauha asudhaushdua</h2>
-				<span class="desc-projeto desc-projeto4">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+				<h2 class="titulo-projeto titulo-projeto4">Historiando</h2>
+				<span class="desc-projeto desc-projeto4">Um jogo desenvolvido como projeto de história, onde o objetivo é testar os conhecimentos ensinados em aula. Desenvolvido 100% em C#.</span>
+				<div class="git"><br><br><br><br><br><br><br><br><br><br><img src="{% static 'images/github64.png' %}" alt=""></div>
 			</div>
 		</div></a>
 		<a href="https://github.com/inacioMattos/TwitterBot-Feriados" target="_blank"><div class="projeto projeto5" onmouseover="proj_enter5()" onmouseout="proj_out5()" style="background-image: url({% static 'images/feriado.png' %});">
 			<div class="info-projeto info-projeto5">
-				<h2 class="titulo-projeto titulo-projeto5">Titulo ulau auha eua aiugauha asudhaushdua</h2>
-				<span class="desc-projeto desc-projeto5">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+				<h2 class="titulo-projeto titulo-projeto5">Bot dos Feriados</h2>
+				<span class="desc-projeto desc-projeto5">A cada dia faz um tweet sobre quantos dias faltam para o próximo feriado de uma forma divertida e personalizada. Desenvolvido com node.js e hospedado numa VPS utilizando o systemctl.</span>
+				<div class="git"><br><br><br><br><br><br><br><br><br><img src="{% static 'images/github64.png' %}" alt=""></div>
 			</div>
 		</div></a>
 		<a href="https://github.com/inacioMattos/identador--pascal" target="_blank"><div class="projeto projeto6" onmouseover="proj_enter6()" onmouseout="proj_out6()" style="background-image: url({% static 'images/site.png' %});">
 			<div class="info-projeto info-projeto6">
-				<h2 class="titulo-projeto titulo-projeto6">Titulo ulau auha eua aiugauha asudhaushdua</h2>
-				<span class="desc-projeto desc-projeto6">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+				<h2 class="titulo-projeto titulo-projeto6">Site pessoal (esse site!)</h2>
+				<span class="desc-projeto desc-projeto6">Utilizando DJANGO desenvolvi esse site que você está visitando! Foi um projeto pessoal com o intuito de servir como aprendizado sobre DJANGO.</span>
+				<div class="git"><br><br><br><br><br><br><br><br><br><br><img src="{% static 'images/github64.png' %}" alt=""></div>
 			</div>
 		</div></a>
 	</div>
+
+	<div class="habilidades">
+		<a name="habilidades">
+			<a name="#"><h1>Habilidades</h1></a>
+			<div class="line"></div>
+			<div class="sliders">
+				<div class="slider">
+					<span>Python     <button onclick="slider1()">mais</button></span>
+					<div class="slider-real">
+							<input type="range" min="1" max="100" value="85" disabled>
+							<div class="porcentagem">
+								<i class="arrow left"></i>
+								<span>85%</span>
+							</div>
+						</div>
+					<div class="slider-info slider-info1">
+						<span>De longe, Python é a linguagem que mais uso para projetos pessoais. 
+							Devido, as duas áreas que mais gosto serem AI (Inteligencia Artificial) e
+							White Hacking, e Python ser a linguagem predominante nessas áreas, foi natural
+							eu me apaixonar por essa linguagem ;P.<br><br>
+							Recentemente, estou me aventurando no web framework DJANGO, inclusive, esse site foi
+							desenolvido utilizando o mesmo.
+							<br><br>Dentro do Python, a área que mais tenho conhecimento é comunicação low-level
+							via rede utilizando socket.
+						</span>
+					</div>
+				</div>
+				<div class="slider">
+						<span>C#     <button onclick="slider2()">mais</button></span>
+						<div class="slider-real">
+							<input type="range" min="1" max="100" value="90" disabled>
+							<div class="porcentagem">
+								<i class="arrow left"></i>
+								<span>90%</span>
+							</div>
+						</div>
+						<div class="slider-info slider-info2">
+							<span>Bem, C# é sem dúvida nenhuma a linguagem que eu mais passei tempo
+								programando. Comecei nela com 14 anos, e apesar de hoje em dia, eu não
+								utilazará com frequência, a maioria dos meus projetos do IFSul foram feito nela.
+								<br><br>Algumas das coisas que já fiz nela: uns 50% de um interpretador para a 
+								linguagem Tutch (uma linguagem feita por mim) como um projeto do IFSul,
+								um sistema de certificação autonomo para a feira de ciências do IFSul Campus
+								Camaquã e também, diversos jogos de computador.
+							</span>
+						</div>
+				</div>
+				<div class="slider">
+						<span>HTML/CSS     <button onclick="slider3()">mais</button></span>
+						<div class="slider-real">
+								<input type="range" min="1" max="100" value="85" disabled>
+								<div class="porcentagem">
+									<i class="arrow left"></i>
+									<span>85%</span>
+								</div>
+							</div>
+						<div class="slider-info slider-info3">
+							<span>Durante todo 2016 eu fui bolsista
+							renumerado pelo CNPQ para um projeto de pesquisa, onde a proposta era eu desenvolver um
+							site que serveria como uma bibliografia de centenas de autoras de poemas em espanhol,
+							 então durante esse ano eu utilizei <b>bastante</b> HTML e CSS.
+							</span>
+						</div>
+				</div>
+				<div class="slider">
+						<span>Robotica     <button onclick="slider4()">mais</button></span>
+						<div class="slider-real">
+							<input type="range" min="1" max="100" value="95" disabled>
+							<div class="porcentagem">
+								<i class="arrow left"></i>
+								<span>95%</span>
+							</div>
+						</div>
+						<div class="slider-info slider-info4">
+							<span>
+								Durante meus <s>quase</s> 04 anos no IFSul, eu competi em mais de 20 competições
+								de robótica, passava no minimo 5 horas semanais no IF fazendo só isso no turno inverso.
+								<br><br>
+								Tenho experiência com Arduino, Raspberry Pi e Lego MINDSTORM.
+								<br><br>
+								Conquistei diversos prêmios, e sem dúvida, passei <b>MUITO</b> tempo programando,
+								construindo, fazendo o design, soldando, robôs. Naturalmente, ganhei muito
+								conhecimento nesse meio-tempo.
+								<br><br>E depois de tanto tempo nisso, posso afirmar, que amo robotíca, e
+								pretendo sempre continuar com isso na minha vida, facilando tarefas trivias
+								e brincando no meu tempo livre com isso ;P.
+							</span>
+						</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="blog">
+		<a name="blog"><h1>Blog</h1></a>
+		<div class="line"></div>
+		<span>Em breve.</span>
+		<div class="img-blog" style="background-image: url({% static 'images/blog.jpg' %});"></div>
+	</div>
+
+
+	<footer>
+			<a href="https://github.com/inacioMattos" target="_blank"><div class="git-footer">
+			<img src="{% static 'images/github64.png' %}" alt="">
+			<span>/inacioMattos</span>
+		</div></a>
+		<a href="https://www.linkedin.com/in/in%C3%A1cio-mattos-39ab0316a/" target="_blank"><div class="git-footer">
+				<img src="{% static 'images/linkedin.png' %}" width="64px" alt="">
+				<span> Inácio Mattos</span>
+			</div></a>
+		<a href="https://twitter.com/inacio_mattos" target="_blank"><div class="git-footer">
+			<img src="{% static 'images/twitter.png' %}" width="64px" alt="">
+			<span>/inacio_mattos</span>
+		</div></a>
+	</footer>
 </div>
 {% endblock %}
