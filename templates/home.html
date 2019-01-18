@@ -4,8 +4,7 @@
 
 {% block head %}
 <link href="{% static 'css/home.css' %}" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{% static 'javascript/home.js' %}"></script>
 {% endblock %}
 
 {% block conteudo %}
@@ -26,6 +25,49 @@
 				🏠     Camaquã, Rio Grande do Sul
 			</h3>
 		</div>
+	</div>
+
+	<div class="header-projetos">
+		<h1>Meus projetos!</h1>
+		<div></div>
+	</div>
+	<div class="projetos">
+		<a href="https://github.com/inacioMattos/identador--pascal" target="_blank"><div class="projeto projeto1" onmouseover="proj_enter1()" onmouseout="proj_out1()" style="background-image: url({% static 'images/funcionamento.gif' %});">
+			<div class="info-projeto info-projeto1">
+				<h2 class="titulo-projeto titulo-projeto1">Identador</h2>
+				<span class="desc-projeto desc-projeto1">Um programa que identa seu código automaticamente. Foi desenvolvido em Pascal e para mais informações, basta clicar.</span>
+			</div>
+		</div></a>
+		<a href="https://github.com/inacioMattos/line--following-robot_OBR2017" target="_blank"><div class="projeto projeto2" onmouseover="proj_enter2()" onmouseout="proj_out2()" style="background-image: url({% static 'images/arduino.JPG' %});">
+			<div class="info-projeto info-projeto2">
+				<h2 class="titulo-projeto titulo-projeto2">Titulo ulau auha eua aiugauha asudhaushdua</h2>
+				<span class="desc-projeto desc-projeto2">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+			</div>
+		</div></a>
+		<a href="https://github.com/inacioMattos/Jogo-da-Velha-Imbat-vel" target="_blank"><div class="projeto projeto3" onmouseover="proj_enter3()" onmouseout="proj_out3()" style="background-image: url({% static 'images/jogoVelha.gif' %});">
+			<div class="info-projeto info-projeto3">
+				<h2 class="titulo-projeto titulo-projeto3">Titulo ulau auha eua aiugauha asudhaushdua</h2>
+				<span class="desc-projeto desc-projeto3">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+			</div>
+		</div></a>
+		<a href="https://github.com/inacioMattos/Historiando" target="_blank"><div class="projeto projeto4" onmouseover="proj_enter4()" onmouseout="proj_out4()" style="background-image: url({% static 'images/historiando.png' %});">
+			<div class="info-projeto info-projeto4">
+				<h2 class="titulo-projeto titulo-projeto4">Titulo ulau auha eua aiugauha asudhaushdua</h2>
+				<span class="desc-projeto desc-projeto4">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+			</div>
+		</div></a>
+		<a href="https://github.com/inacioMattos/TwitterBot-Feriados" target="_blank"><div class="projeto projeto5" onmouseover="proj_enter5()" onmouseout="proj_out5()" style="background-image: url({% static 'images/feriado.png' %});">
+			<div class="info-projeto info-projeto5">
+				<h2 class="titulo-projeto titulo-projeto5">Titulo ulau auha eua aiugauha asudhaushdua</h2>
+				<span class="desc-projeto desc-projeto5">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+			</div>
+		</div></a>
+		<a href="https://github.com/inacioMattos/identador--pascal" target="_blank"><div class="projeto projeto6" onmouseover="proj_enter6()" onmouseout="proj_out6()" style="background-image: url({% static 'images/site.png' %});">
+			<div class="info-projeto info-projeto6">
+				<h2 class="titulo-projeto titulo-projeto6">Titulo ulau auha eua aiugauha asudhaushdua</h2>
+				<span class="desc-projeto desc-projeto6">ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa</span>
+			</div>
+		</div></a>
 	</div>
 </div>
 {% endblock %}
